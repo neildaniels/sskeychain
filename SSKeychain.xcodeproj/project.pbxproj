@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31D876A81BA33D8D000F106A /* SSKeychainWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D876A71BA33D8D000F106A /* SSKeychainWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		365EED921B2F5439006A537C /* SSKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365EED881B2F5439006A537C /* SSKeychain.framework */; };
 		365EEDA11B2F54B6006A537C /* SSKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC42DB17DB877900201DDC /* SSKeychainTests.m */; };
 		365EEDA21B2F54BB006A537C /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 21CC42EF17DB878300201DDC /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,11 +64,12 @@
 		21CC42F117DB878300201DDC /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		21CC42F217DB878300201DDC /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		21CC42F917DB87C300201DDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		31D876A71BA33D8D000F106A /* SSKeychainWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainWatch.h; sourceTree = "<group>"; };
 		365EED881B2F5439006A537C /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365EED911B2F5439006A537C /* SSKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		365EEDD01B2F5648006A537C /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365EEDD91B2F5648006A537C /* SSKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365EEDF51B2F56E0006A537C /* SSKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		365EEDF51B2F56E0006A537C /* SSKeychainWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSKeychainWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365EEDF71B2F56E0006A537C /* SSKeychain-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-watchOS.h"; sourceTree = "<group>"; };
 		365EEDF91B2F56E0006A537C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A6664F1A844CF100287CA3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +145,7 @@
 				365EED911B2F5439006A537C /* SSKeychainTests.xctest */,
 				365EEDD01B2F5648006A537C /* SSKeychain.framework */,
 				365EEDD91B2F5648006A537C /* SSKeychainTests.xctest */,
-				365EEDF51B2F56E0006A537C /* SSKeychain.framework */,
+				365EEDF51B2F56E0006A537C /* SSKeychainWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +183,7 @@
 				21CC42ED17DB878300201DDC /* SSKeychain.strings */,
 				21CC42EF17DB878300201DDC /* SSKeychain.h */,
 				21CC42F017DB878300201DDC /* SSKeychain.m */,
+				31D876A71BA33D8D000F106A /* SSKeychainWatch.h */,
 				21CC42F117DB878300201DDC /* SSKeychainQuery.h */,
 				21CC42F217DB878300201DDC /* SSKeychainQuery.m */,
 				21CC42D917DB877900201DDC /* Tests */,
@@ -222,6 +225,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D876A81BA33D8D000F106A /* SSKeychainWatch.h in Headers */,
 				365EEDFE1B2F56FD006A537C /* SSKeychain.h in Headers */,
 				365EEE001B2F56FD006A537C /* SSKeychainQuery.h in Headers */,
 			);
@@ -317,7 +321,7 @@
 			);
 			name = "SSKeychain-watchOS";
 			productName = "SSKeychain-watchOS";
-			productReference = 365EEDF51B2F56E0006A537C /* SSKeychain.framework */;
+			productReference = 365EEDF51B2F56E0006A537C /* SSKeychainWatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -908,7 +912,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.SSKeychain;
-				PRODUCT_NAME = SSKeychain;
+				PRODUCT_NAME = SSKeychainWatch;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -939,7 +943,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.SSKeychain;
-				PRODUCT_NAME = SSKeychain;
+				PRODUCT_NAME = SSKeychainWatch;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -970,7 +974,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.SSKeychain;
-				PRODUCT_NAME = SSKeychain;
+				PRODUCT_NAME = SSKeychainWatch;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;

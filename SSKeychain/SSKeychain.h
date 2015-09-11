@@ -196,5 +196,8 @@ extern NSString *const kSSKeychainWhereKey;
 
 @end
 
-
+#if TARGET_OS_WATCH
+#import <SSKeychainWatch/SSKeychainQuery.h>
+#else
 #import <SSKeychain/SSKeychainQuery.h>
+#endif
